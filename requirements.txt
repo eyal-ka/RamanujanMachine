@@ -1,0 +1,15 @@
+matplotlib
+mpmath
+numpy
+psutil
+psycopg2
+pytest
+scipy
+simplejson
+six
+sqlacodegen
+SQLAlchemy
+xlrd
+sympy
+bs4
+requests
