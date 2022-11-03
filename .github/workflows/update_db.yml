@@ -1,7 +1,9 @@
 name: update_db_from_boinc_test
 run-name: update_db_from_boinc1
-on: [push]
-
+on:
+  schedule:
+    - cron: '*/3 * * * *'
+ 
 jobs:
   update_db:
     runs-on: ubuntu-latest
