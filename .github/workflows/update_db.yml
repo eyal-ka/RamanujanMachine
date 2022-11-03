@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: creating_workflows_for_updating_db_daily
       - uses: actions/setup-python@v3
         with:
           python-version: "3.10"
