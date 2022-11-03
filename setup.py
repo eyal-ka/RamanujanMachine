@@ -31,5 +31,7 @@ setup(
         'sqlacodegen>=2.3.0',
         'sympy>=1.5.1',
         'xlrd>=2.0.1',
+        "requests",
+        "beautifulsoup4",
     ]
 )
