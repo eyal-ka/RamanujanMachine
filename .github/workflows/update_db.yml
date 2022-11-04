@@ -2,7 +2,7 @@ name: update_db_from_boinc_test
 run-name: update_db_from_boinc1
 on:
   schedule:
-    - cron: '42 * * * *'
+    - cron: '0 8 * * *'
  
 jobs:
   update_db:
