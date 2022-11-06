@@ -42,12 +42,12 @@ class PcfConvergence(Enum):
 class PcfCanonicalConstant(Base):
     __tablename__ = 'pcf_canonical_constant'
     __table_args__ = (
-        UniqueConstraint('p', 'q'),
+        UniqueConstraint('P', 'Q'),
     )
 
     const_id = Column(ForeignKey('constant.const_id'), primary_key=True)
-    p = Column(ARRAY(Numeric()), nullable=False)
-    q = Column(ARRAY(Numeric()), nullable=False)
+    P = Column(ARRAY(Numeric()), nullable=False)
+    Q = Column(ARRAY(Numeric()), nullable=False)
     last_matrix = Column(Text())
     depth = Column(Integer)
     convergence = Column(Integer)
