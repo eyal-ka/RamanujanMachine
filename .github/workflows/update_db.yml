@@ -1,7 +1,9 @@
 name: update_db_from_boinc_test
 run-name: update_db_from_boinc1
-on: [push]
-
+on:
+  schedule:
+    - cron: '0 8 * * *'
+ 
 jobs:
   update_db:
     runs-on: ubuntu-latest
@@ -18,3 +20,4 @@ jobs:
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           python db/scripts/update_db_from_boinc.py $user_pass
+
