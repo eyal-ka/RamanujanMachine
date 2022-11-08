@@ -23,8 +23,8 @@ def add_canonical_pcf(cannonical_form_numerator, cannonical_form_denominator):
     db_handle = ramanujan_db.RamanujanDB()
     pcf = PcfCanonicalConstant()
     pcf.base = Constant()
-    pcf.p = cannonical_form_numerator
-    pcf.q = cannonical_form_denominator
+    pcf.P = cannonical_form_numerator
+    pcf.Q = cannonical_form_denominator
     #TODO: change to all_all([pcfs])
     db_handle.session.add(pcf)
     try:
