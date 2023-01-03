@@ -20,7 +20,7 @@ db_configuration = {
     'port': 5432,
     'user': '',
     'passwd': '',
-    'name': 'ramanujanv3'
+    'name': 'lirec-main'
 }
 
 def get_connection_string(db_name=None):
